@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tugas_3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        main h1 {
+            margin: 0; 
+            padding: 0;
+            line-height: 1;
+        }
+
+        .judul {
+            margin-bottom: 100px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        header {
+            color: #ffd37a;
+            font-size: 2em;
+            font-family: "Arial Black", sans-serif;
+        }
+
+        .main {
+            color: black;
+            font-size: 3em;
+            font-family: "Arial Black", sans-serif;
+        }
+
+        .color{
+            color: blue;
+        }
+
+        p {
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+        }
+
+        .beauty, .construction {
+            width: 40%;
+            font-family: "Arial Black", sans-serif;
+            color: black;
+        }
+
+        .beauty::after, .construction::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            float: left;
+            margin-right: 20px;
+            height: 200px;
+            width: 200px;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            justify-content: end;
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2><em>dev.com</em></h2>
+        </header>
+        <div class="main">
+            <h1>We are a <span class="color">creative</span></h1>
+            <h1 class="judul">Design agency</h1>
+        </div>
+        <div class="container">
+            <div class="beauty">
+                <img src="beauty-logo-design.jpg" height="195" width="195"/>
+                <h3>beauty</h3>
+                <p class="first-paragraf">
+                    we strive to create the most <br>
+                    beautiful website for all your<br>
+                    needs. working closely with you to<br>
+                    design and develop an amazing<br>
+                    website for business.
+                </p>
+            </div>
+
+            <div class="construction">
+                <img src="download.jpeg" height="195" width="195"/>
+                <h3>construction</h3>
+                <p class="first-paragraf">
+                    built by our team of professional<br>
+                    developers, we ensure the most<br>
+                    rigorous and modern websites.<br>
+                    built from scratch using html<br>
+                    and css. only the best for you.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Create.Develop.Design.</span>
+    </footer>
+</body>
+</html>
